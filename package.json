@@ -1,6 +1,6 @@
 {
   "name": "mcp-agentic-pipelines",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Composable, agentic pipelines for MCP — fact-checking (DSPy), RAG (hybrid search), document intelligence (DeepPipe), and clinical voice (Groq/ElevenLabs). 31 AI tools, one command, zero manual setup.",
   "author": "Jinan Kordab <https://github.com/jinan-kordab>",
   "license": "MIT",
