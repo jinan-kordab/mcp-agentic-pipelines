@@ -2,10 +2,6 @@
 
 > **One MCP server. Five AI pipelines. Thirty-one tools. Zero manual setup.**
 
-[![npm](https://img.shields.io/npm/v/mcp-agentic-pipelines)](https://www.npmjs.com/package/mcp-agentic-pipelines)
-[![smithery](https://img.shields.io/badge/smithery-published-8B5CF6)](https://smithery.ai/server/mcp-agentic-pipelines)
-[![license](https://img.shields.io/npm/l/mcp-agentic-pipelines)](LICENSE)
-
 Composable, agentic AI pipelines for Anthropic's Model Context Protocol. Fact-check claims with DSPy, search documents with hybrid RAG, extract intelligence with DeepPipe, and run clinical voice intake — all from a single MCP server. Designed for Claude Desktop, VS Code, Cursor, and any MCP-compatible client.
 
 ---
