@@ -1,0 +1,70 @@
+{
+  "name": "mcp-agentic-pipelines",
+  "version": "1.0.0",
+  "description": "Composable, agentic pipelines for MCP — fact-checking (DSPy), RAG (hybrid search), document intelligence (DeepPipe), and clinical voice (Groq/ElevenLabs). 31 AI tools, one command, zero manual setup.",
+  "author": "Jinan Kordab <https://github.com/jinan-kordab>",
+  "license": "MIT",
+  "repository": "github:jinan-kordab/mcp-agentic-pipelines",
+  "homepage": "https://github.com/jinan-kordab/mcp-agentic-pipelines#readme",
+  "bugs": "https://github.com/jinan-kordab/mcp-agentic-pipelines/issues",
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "ai",
+    "llm",
+    "fact-checking",
+    "dspy",
+    "rag",
+    "document-intelligence",
+    "voice-ai",
+    "agentic",
+    "pipelines",
+    "claude",
+    "anthropic"
+  ],
+  "bin": {
+    "mcp-agentic-pipelines": "./packages/server/src/index.ts"
+  },
+  "files": [
+    "packages/",
+    "vendors/",
+    "setup.mjs",
+    "test.mjs",
+    ".env.example",
+    "README.md"
+  ],
+  "workspaces": [
+    "packages/core",
+    "packages/deeppipe",
+    "packages/piste",
+    "packages/precis",
+    "packages/clinical",
+    "packages/server"
+  ],
+  "scripts": {
+    "setup": "node setup.mjs",
+    "start": "node --import tsx packages/server/src/index.ts",
+    "dev": "node --import tsx packages/server/src/index.ts",
+    "test": "node test.mjs",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf packages/*/dist"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "rimraf": "^6.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "@kordabjinan/deeppipe": "^0.1.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "groq-sdk": "^0.8.0",
+    "openai": "^4.73.0",
+    "zod": "^3.23.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

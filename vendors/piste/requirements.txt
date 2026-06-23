@@ -1,0 +1,53 @@
+# ============================================================
+# Piste — Backend Dependencies
+# FastAPI 0.115 + DSPy 2.6 + LiteLLM + PostgreSQL + Redis
+# ============================================================
+
+# --- Web Framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+sse-starlette==2.2.1
+
+# --- Validation ---
+pydantic==2.10.5
+pydantic-settings==2.7.1
+
+# --- Database ---
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+alembic==1.14.1
+psycopg2-binary==2.9.10
+
+# --- Cache ---
+redis==5.2.1
+hiredis==3.0.0
+
+# --- AI / ML Pipeline ---
+dspy-ai
+litellm
+faiss-cpu
+numpy
+
+# --- HTTP / SSE / Web ---
+httpx
+aiohttp
+
+# --- Observability ---
+prometheus-client==0.21.1
+opentelemetry-api==1.29.0
+opentelemetry-sdk==1.29.0
+opentelemetry-instrumentation-fastapi==0.50b0
+
+# --- Utilities ---
+python-dotenv==1.0.1
+python-multipart==0.0.19
+tenacity==9.0.0
+orjson==3.10.13
+
+# --- Auth ---
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# --- Testing ---
+pytest==8.3.4
+pytest-asyncio==0.25.0

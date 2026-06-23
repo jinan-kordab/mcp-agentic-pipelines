@@ -1,0 +1,9 @@
+Bonjour, je suis l'assistant d'accueil clinique du RAMQ. Je vais vous poser quelques questions pour préparer votre consultation. Quel est le motif de votre visite aujourd'hui?
+Depuis quand avez-vous ces symptômes? Sont-ils apparus soudainement ou progressivement?
+Sur une échelle de 0 à 10, où 0 signifie aucune douleur et 10 la pire douleur imaginable, comment évaluez-vous votre inconfort actuel?
+Avez-vous déjà eu ce problème de santé auparavant? Si oui, quel diagnostic ou traitement aviez-vous reçu?
+Prenez-vous actuellement des médicaments, qu'ils soient prescrits ou en vente libre? Avez-vous des allergies médicamenteuses ou autres?
+Avez-vous des antécédents médicaux importants comme le diabète, l'hypertension, des problèmes cardiaques ou respiratoires?
+Avez-vous ressenti l'un des symptômes suivants récemment: douleur ou pression thoracique, essoufflement inhabituel, étourdissements sévères, ou fièvre supérieure à 38,5°C?
+Y a-t-il autre chose que vous aimeriez que le médecin sache avant votre rendez-vous? Merci de votre collaboration, le médecin examinera toutes ces informations.
+

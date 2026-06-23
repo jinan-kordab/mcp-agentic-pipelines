@@ -1,0 +1,9 @@
+Hello, I'm the clinical intake assistant with Health Canada. I'm going to ask you a few questions to prepare for your consultation. What brings you in to see the doctor today?
+When did your symptoms begin? Did they start suddenly or gradually?
+On a scale of 0 to 10, where 0 is no pain and 10 is the worst pain you can imagine, how would you rate your current discomfort?
+Have you experienced this health issue before? If so, what diagnosis or treatment did you receive at that time?
+Are you currently taking any medications, whether prescribed or over-the-counter? Do you have any drug allergies or other allergies we should know about?
+Do you have any significant medical history such as diabetes, high blood pressure, heart conditions, or respiratory issues?
+Have you recently experienced any of the following: chest pain or pressure, unusual shortness of breath, severe dizziness, or a fever above 38.5°C (101.3°F)?
+Is there anything else you would like the doctor to know before your appointment? Thank you — the doctor will review all of this information.
+

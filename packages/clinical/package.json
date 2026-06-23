@@ -1,0 +1,22 @@
+{
+  "name": "@unified-mcp/clinical",
+  "version": "0.1.0",
+  "description": "Clinical Intake integration for unified MCP server — AI pre-consultation voice agent with multi-provider LLM support",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@unified-mcp/core": "^0.1.0",
+    "openai": "^4.73.0",
+    "groq-sdk": "^0.8.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0"
+  }
+}

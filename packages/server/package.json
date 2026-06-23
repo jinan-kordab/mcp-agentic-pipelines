@@ -1,0 +1,31 @@
+{
+  "name": "@unified-mcp/server",
+  "version": "0.1.0",
+  "description": "Unified MCP Server — main entry point registering all tools, resources, and prompts",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "bin": {
+    "unified-jk-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/index.js",
+    "dev": "node --import tsx src/index.ts"
+  },
+  "dependencies": {
+    "@unified-mcp/core": "^0.1.0",
+    "@unified-mcp/deeppipe": "^0.1.0",
+    "@unified-mcp/piste": "^0.1.0",
+    "@unified-mcp/precis": "^0.1.0",
+    "@unified-mcp/clinical": "^0.1.0",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

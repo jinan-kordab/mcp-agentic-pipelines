@@ -1,0 +1,17 @@
+Starting MCP server...
+Sending requests...
+
+  FAIL mcp_health no response
+  FAIL mcp_list_providers no response
+  FAIL deeppipe_stats no response
+  FAIL deeppipe_list_documents no response
+  FAIL deeppipe_search no response
+  FAIL deeppipe_ingest no response
+  FAIL deeppipe_get_document no response
+  FAIL deeppipe_get_text no response
+  FAIL deeppipe_extractive_answer no response
+  FAIL piste_list_verdicts no response
+  FAIL precis_list_documents no response
+  FAIL clinical_list_sessions no response
+
+=== 0/12 passed, 12 failed ===

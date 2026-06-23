@@ -1,0 +1,62 @@
+=== Starting MCP server ===
+Server path: C:\Users\korda\Desktop\JENYA_BOOKS_II\exported-assets\unified-mcp-server\packages\server\src\index.ts
+
+Server started (or crashed). Stdout length: 376, Stderr length: 2375
+
+=== STDERR (first 2000 chars) ===
+{"timestamp":"2026-06-22T02:42:36.169Z","level":"info","message":"Unified MCP Server v0.1.0 starting..."}
+{"timestamp":"2026-06-22T02:42:36.172Z","level":"info","message":"Transport: stdio"}
+{"timestamp":"2026-06-22T02:42:36.172Z","level":"info","message":"LLM Default Provider: deepseek"}
+{"timestamp":"2026-06-22T02:42:36.172Z","level":"info","message":"Log level: debug"}
+{"timestamp":"2026-06-22T02:42:38.538Z","level":"info","message":"DeepPipe index opened: ./data/deeppipe.db (0 documents)"}
+{"timestamp":"2026-06-22T02:42:38.540Z","level":"info","message":"DeepPipe: 10 tools, 2 resources, 1 prompt registered"}
+{"timestamp":"2026-06-22T02:42:38.540Z","level":"info","message":"Integration loaded: deeppipe (engine direct)"}
+{"timestamp":"2026-06-22T02:42:38.595Z","level":"info","message":"Starting piste backend..."}
+{"timestamp":"2026-06-22T02:42:38.601Z","level":"info","message":"Piste: 6 tools via Python bridge"}
+{"timestamp":"2026-06-22T02:42:38.602Z","level":"info","message":"Integration loaded: piste (Python bridge)"}
+{"timestamp":"2026-06-22T02:42:38.602Z","level":"error","message":"piste process error: spawn python ENOENT"}
+{"timestamp":"2026-06-22T02:42:38.617Z","level":"info","message":"Starting precis backend..."}
+{"timestamp":"2026-06-22T02:42:38.623Z","level":"info","message":"Precis: 8 tools via Python bridge"}
+{"timestamp":"2026-06-22T02:42:38.623Z","level":"info","message":"Integration loaded: precis (Python bridge)"}
+{"timestamp":"2026-06-22T02:42:38.624Z","level":"error","message":"precis process error: spawn python ENOENT"}
+{"timestamp":"2026-06-22T02:42:38.633Z","level":"info","message":"Clinical LLM: provider=deepseek, model=deepseek-chat"}
+{"timestamp":"2026-06-22T02:42:38.633Z","level":"info","message":"Using REAL pipeline from clinical-intake/pipeline.mjs"}
+{"timestamp":"2026-06-22T02:42:38.633Z","level":"info","message":"Clinical: 5 tools, 1 resource, 2 prompts — using REAL clinical-intake/pipeline.mjs"}
+{"timestamp":"2026-06-22T02:42:38.633Z"
+
+Sending tools/list request...
+
+=== RESPONSE CHECK ===
+Lines received: 6
+SUCCESS! 31 tools registered.
+  - mcp_health
+  - mcp_list_providers
+  - deeppipe_search
+  - deeppipe_ingest
+  - deeppipe_ingest_file
+  - deeppipe_chat_context
+  - deeppipe_extractive_answer
+  - deeppipe_list_documents
+  - deeppipe_get_document
+  - deeppipe_get_text
+  - deeppipe_remove_document
+  - deeppipe_stats
+  - piste_fact_check
+  - piste_list_verdicts
+  - piste_replay
+  - piste_get_audit
+  - piste_get_verdict
+  - piste_submit_feedback
+  - precis_query
+  - precis_list_documents
+  - precis_debug_stem
+  - precis_debug_search
+  - precis_upload_document
+  - precis_upload_batch
+  - precis_extract_work_order
+  - precis_list_work_orders
+  - clinical_start_session
+  - clinical_process_audio
+  - clinical_generate_podcast
+  - clinical_list_sessions
+  - clinical_get_session

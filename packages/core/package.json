@@ -1,0 +1,21 @@
+{
+  "name": "@unified-mcp/core",
+  "version": "0.1.0",
+  "description": "Shared utilities, types, config, and multi-provider LLM abstraction for the unified MCP server",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0"
+  }
+}

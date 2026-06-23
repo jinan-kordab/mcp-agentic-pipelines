@@ -1,0 +1,26 @@
+# Development / Local deployment
+version: "3.8"
+
+services:
+  unified-mcp:
+    build: .
+    container_name: unified-jk-mcp
+    ports:
+      - "3100:3100"
+    environment:
+      - MCP_TRANSPORT=sse
+      - MCP_SSE_PORT=3100
+      - MCP_LOG_LEVEL=info
+      - DEEPPIPE_INDEX_PATH=/app/data/deeppipe.db
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data           # Persistent document index
+      - ../piste:/app/repos/piste   # Python bridge scripts (read-only)
+      - ../precis-agentic-pipeline:/app/repos/precis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3100/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

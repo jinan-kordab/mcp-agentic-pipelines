@@ -1,0 +1,21 @@
+{
+  "name": "@unified-mcp/deeppipe",
+  "version": "0.1.0",
+  "description": "DeepPipe integration for unified MCP server — document ingestion, full-text search, and RAG chat via @kordabjinan/deeppipe",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@unified-mcp/core": "^0.1.0",
+    "@kordabjinan/deeppipe": "^0.1.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0"
+  }
+}

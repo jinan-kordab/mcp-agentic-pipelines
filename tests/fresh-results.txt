@@ -1,0 +1,27 @@
+=== Fresh Test Suite ===
+
+Server started.
+
+── Health Check ──
+  PASS mcp_health: 31 tools
+
+── DeepPipe ──
+  PASS deeppipe_stats
+  PASS deeppipe_search
+  PASS deeppipe_ingest
+  PASS deeppipe_list
+
+── Clinical Intake ──
+  FAIL clinical_start_session: {"code":"INTERNAL","message":"Cannot find package 'groq-sdk'
+  FAIL clinical_list_sessions: {"code":"INTERNAL","message":"Cannot find package 'groq-sdk'
+
+── Piste (Python DSPy pipeline) ──
+  FAIL piste_fact_check: {"code":"RATE_LIMITED","message":"Rate limit exceeded for tool \"piste_fact_chec
+
+── Precis (Python RAG pipeline) ──
+  FAIL precis_list_documents: no response
+  FAIL precis_debug_stem: {"code":"PRECIS_ERROR","message":"precis: timeout waiting fo
+
+── Python Bridge Status ──
+  error: piste process error: spawn python ENOENT
+  error: precis process error: spawn python ENOENT

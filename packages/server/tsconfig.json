@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist"],
+  "references": [
+    { "path": "../core" },
+    { "path": "../deeppipe" },
+    { "path": "../piste" },
+    { "path": "../precis" },
+    { "path": "../clinical" }
+  ]
+}

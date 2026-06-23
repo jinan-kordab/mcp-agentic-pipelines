@@ -1,0 +1,19 @@
+{
+  "name": "mcp-agentic-pipelines",
+  "displayName": "Agentic Pipelines",
+  "description": "Composable AI pipelines for MCP — fact-checking (DSPy), RAG (hybrid), document intelligence (DeepPipe), and clinical voice. 31 tools, 9 LLM providers.",
+  "category": "AI & ML",
+  "runtime": "node",
+  "command": "npx",
+  "args": ["mcp-agentic-pipelines"],
+  "env": {
+    "DEEPSEEK_API_KEY": { "description": "DeepSeek API key (default LLM)", "required": false },
+    "OPENAI_API_KEY": { "description": "OpenAI API key (fallback LLM)", "required": false },
+    "GROQ_API_KEY": { "description": "Groq API key (clinical voice STT)", "required": false },
+    "ELEVENLABS_API_KEY": { "description": "ElevenLabs API key (clinical voice TTS)", "required": false },
+    "TAVILY_API_KEY": { "description": "Tavily API key (piste web search)", "required": false },
+    "SERPER_API_KEY": { "description": "Serper API key (piste web search)", "required": false },
+    "GOOGLE_CSE_API_KEY": { "description": "Google CSE API key (piste search)", "required": false },
+    "GOOGLE_CSE_ID": { "description": "Google CSE ID (piste search)", "required": false }
+  }
+}

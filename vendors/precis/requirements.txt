@@ -1,0 +1,19 @@
+# Precis — Multi-Agent RAG Platform
+# Dual retrieval: hash keyword + FAISS vector + LLM synthesis
+# LLM: DeepSeek (OpenAI-compatible API)
+
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+numpy
+pandas
+nltk
+sqlalchemy
+httpx
+openai
+pymupdf
+python-multipart
+websockets
+faiss-cpu
+sentence-transformers
